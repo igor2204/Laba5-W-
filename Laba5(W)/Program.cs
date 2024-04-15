@@ -5,7 +5,7 @@
 
     public virtual void MakeNoise()
     {
-        Console.WriteLine("Животное издает звуки");
+        Console.WriteLine("Животное шумит");
     }
 
     public virtual void Eat()
@@ -30,7 +30,7 @@ class Dog : Animal
 
     public override void Eat()
     {
-        Console.WriteLine("Собака ест кость");
+        Console.WriteLine("Собака ест мясо");
     }
 }
 
@@ -45,7 +45,7 @@ class Cat : Animal
 
     public override void Eat()
     {
-        Console.WriteLine("Кошка ест рыбу");
+        Console.WriteLine("Кошка ест сосиску");
     }
 }
 
@@ -55,7 +55,7 @@ class Horse : Animal
 
     public override void MakeNoise()
     {
-        Console.WriteLine("Лошадь фыркает");
+        Console.WriteLine("Лошадь ржет");
     }
 
     public override void Eat()
@@ -77,19 +77,19 @@ class Program
     static void Main()
     {
         Dog dog = new Dog();
-        dog.Breed = "Лабрадор";
-        dog.food = "Кость";
+        dog.Breed = "Шпиц";
+        dog.food = "Мясо";
         dog.location = "Дом";
 
         Cat cat = new Cat();
         cat.Activity = true;
-        cat.food = "Рыба";
+        cat.food = "Сосиска";
         cat.location = "Квартира";
 
         Horse horse = new Horse();
-        horse.Color = "Коричневый";
+        horse.Color = "Белый";
         horse.food = "Сено";
-        horse.location = "Стойло";
+        horse.location = "Сарай";
 
         Veterinar vet = new Veterinar();
 
